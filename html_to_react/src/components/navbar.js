@@ -1,4 +1,6 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
+
 import './styles.css'; // Import corresponding CSS file
 
 const Navbar = () => {
@@ -6,10 +8,11 @@ const Navbar = () => {
     <div className="page1">
       <div id="navbar">
         <a id="logo" href="#" style={{marginLeft: '10px'}}>Learnera</a>
-        <a href="edu.html" style={{marginLeft: '500px'}}>Home</a>
-        <a href="edupack.html">Packages</a>
-        <a href="contact.html" style={{marginRight: '450px', border: '10px'}}>Contact</a>
-        <a id="signin" href="signin.html">Sign In</a>
+        <Link to="/home" style={{marginLeft: '500px'}}>Home</Link>
+        <Link to="/packages" >Packages</Link>
+        <Link to="/contact">Contact</Link>
+
+        <Link to="/signin" id="signin" >Sign In</Link>
       </div>
     </div>
   );
