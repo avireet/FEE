@@ -1,0 +1,37 @@
+/* Reset styles for list elements */
+.carousel {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  /* Styles for individual slides */
+  .carousel .carousel-item {
+    display: inline-block;
+    width: 100%;
+  }
+  
+  /* Styles for navigation arrows */
+  .carousel .control-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    cursor: pointer;
+  }
+  
+  /* Additional styles for left and right navigation arrows */
+  .carousel .control-arrow:hover {
+    opacity: 0.8;
+  }
+  
+  /* Styles for thumbnail navigation (if enabled) */
+  .carousel .thumbs-wrapper {
+    /* Styles for thumbnail wrapper */
+  }
+  
+  /* Styles for individual thumbnail items */
+  .carousel .thumb {
+    /* Styles for individual thumbnail */
+  }
+  
