@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './styles.css';
+import './carousel.min.css';
 
 const Carousel = ({ images }) => {
   const [activeIndex, setActiveIndex] = useState(0);

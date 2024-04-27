@@ -1,37 +1,38 @@
-/* Reset styles for list elements */
+/* CSS for carousel container */
 .carousel {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-  }
-  
-  /* Styles for individual slides */
-  .carousel .carousel-item {
-    display: inline-block;
-    width: 100%;
-  }
-  
-  /* Styles for navigation arrows */
-  .carousel .control-arrow {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 2;
-    cursor: pointer;
-  }
-  
-  /* Additional styles for left and right navigation arrows */
-  .carousel .control-arrow:hover {
-    opacity: 0.8;
-  }
-  
-  /* Styles for thumbnail navigation (if enabled) */
-  .carousel .thumbs-wrapper {
-    /* Styles for thumbnail wrapper */
-  }
-  
-  /* Styles for individual thumbnail items */
-  .carousel .thumb {
-    /* Styles for individual thumbnail */
-  }
-  
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center; /* Center items vertically */
+}
+
+/* CSS for individual slides */
+.carousel .carousel-item {
+  width: 100%;
+}
+
+/* CSS for navigation arrows */
+.carousel .carousel-control-prev,
+.carousel .carousel-control-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  font-size: 44px;
+  color: rgba(0, 0, 0, 0.286);
+}
+
+/* Adjust position of previous arrow */
+.carousel .carousel-control-prev {
+  left: 10px; /* Adjust as needed */
+}
+
+/* Adjust position of next arrow */
+.carousel .carousel-control-next {
+  right: 10px; /* Adjust as needed */
+}
+

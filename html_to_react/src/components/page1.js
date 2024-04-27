@@ -33,6 +33,7 @@ const Page1 = () => {
           showArrows={false}
           showThumbs={false}
           showStatus={false}
+          showIndicators={false}
           infiniteLoop={true}
           autoPlay={false}
           interval={5000}
