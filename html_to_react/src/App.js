@@ -8,7 +8,6 @@ import Quiz from './components/quiz';
 import Page3 from './components/page3';
 import Results from './components/result';
 import Vision from './components/vision';
-import Teachers from './components/teachers';
 import Review from './components/review';
 import FAQ from './components/faq';
 
@@ -19,19 +18,26 @@ const App = () => {
         <Navbar />
         <Routes>
           <Route path="/contact" element={<ContactPage />} />
+          {/* Define other routes here */}
+          <Route path="/" element={<Home />} />
         </Routes>
-        <Page1 />
-        <Quiz />
-        <Page3 />
-        <Results />
-        <Vision />
-        <Teachers />
-        <Review />
-        <FAQ />
         <Footer />
       </div>
     </Router>
   );
 }
+
+// Define a Home component if needed
+const Home = () => (
+  <>
+    <Page1 />
+    <Page3 />
+    <Quiz />
+    <Results />
+    <Vision />
+    <Review />
+    <FAQ />
+  </>
+);
 
 export default App;
