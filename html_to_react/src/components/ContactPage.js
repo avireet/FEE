@@ -2,7 +2,9 @@ import React from 'react';
 import './style.css';
 import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
 
+
 class ContactPage extends React.Component {
+  
   componentDidMount() {
     const inputs = document.querySelectorAll(".input");
 
