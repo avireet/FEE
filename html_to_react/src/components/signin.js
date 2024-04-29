@@ -18,7 +18,7 @@ function LeftSide() {
         <a>✔️LIVE Classes</a><br />
         <a>✔️Best Teachers</a><br />
         <a>✔️Free Quiz</a>
-        <p style={{ color: 'white', marginTop: '450px', fontWeight: '550',fontSize:'30px' }}>Learnera</p>
+        <p style={{ color: 'white', marginTop: '250px', fontWeight: '550', marginLeft:'-50px',fontSize:'25px' }}>Learnera</p>
       </ul>
     </div>
   );

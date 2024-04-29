@@ -1,5 +1,5 @@
 import React from 'react';
-
+import './packages.css';
 const Cart = ({ items, removeFromCart }) => {
   return (
     <div className='cartbox'>
