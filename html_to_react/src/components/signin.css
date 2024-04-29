@@ -38,7 +38,7 @@ body {
     text-decoration: none;
     font-weight: 600;
 }
-.container {
+.containersign {
     display: flex;
     height: 100vh;
     margin: 4vh 25vh;
@@ -48,25 +48,20 @@ body {
 }
 
 .left-side {
-    width: 50%;
     flex: 1;
+    width:50%;
     border-radius: 8px;
     justify-content: center;
-    padding: 16% 0 4.7% 1.5%;
+    padding: 4.5% 0 4.7% 3.5%;
     background-image: url('signin.png'); 
-    background-position: center;
-    background-size: cover; /* Cover the entire container with the image */
-    background-repeat: no-repeat; /* Prevent the background image from repeating */
-    background-color: #586380;
     color: #282e3e;
+    background-size: cover;
     font-size: 40px;
-    font-weight: 800;
+    font-weight: 700;
     line-height: 40px;
 }
 
-.left-side p{
-    margin-top: -205px;
-}
+
 
 .right-side {
     width: 50%;
@@ -77,22 +72,21 @@ body {
     border-radius: 8px;
     color: #586380;
 }
-/* 
+
 .left-side p{
-    margin-top: 110px;
-} */
+    margin-top: 45px;
+    
+}
 .left-side ul{
-    margin-top: 35px;
+    margin-top: 45px;
     font-size:20px;
     margin-left: 50px;
     font-weight: 500;
 }
 
 
-
-
 .form-container {
-    max-width: 400px;
+    max-width: 900px;
     padding: 20px;
     background-color: #fff;
     border-radius: 8px;
@@ -118,6 +112,12 @@ body {
     margin-bottom: 16px;
     border: 1px solid #ccc;
     border-radius: 4px;
+    background-color:#F6F7FB;
+    border:none;
+    font-family:'mukta';
+    font-weight:500;
+    font-size: 15px;
+    box-shadow: 1px 1px 1px 0.5px rgba(0, 0, 0, 0.1);
 }
 
 .form-container button {
@@ -128,7 +128,6 @@ body {
     border-radius: 4px;
     cursor: pointer;
 }
-
 .overlay {
     position: fixed;
     top: 0;

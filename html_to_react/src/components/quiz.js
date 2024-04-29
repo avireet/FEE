@@ -1,14 +1,10 @@
 import React from 'react';
-import './styles.css'; // Import corresponding CSS file
+import './styles.css'; 
 
 const Quiz = () => {
   return (
     <section>
       <div className="quiz">
-        {/* Video element (if needed) */}
-        {/* <video className="vid" src="learnera.mp4" autoPlay muted loop></video> */}
-
-        {/* Quiz heading */}
         <div className="quizh">
           <h2>TEST YOUR</h2><br />
         </div>

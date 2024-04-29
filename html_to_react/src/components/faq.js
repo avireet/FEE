@@ -61,7 +61,7 @@ const FAQ = () => {
             </div>
           </div>
 
-          <div className="faq-item">
+          <div className="faq-item" style={{marginBottom:'50px'}}>
             <button className="dropdown-btn"onClick={() => toggleDropdown('item4')}>Is technical support available if I encounter issues with the website?</button>
             <Dropdown isVisible={dropdownVisible.item4}>
               <p>Yes, Learnera offers a mobile app for iOS and Android devices, allowing you to access courses anytime, anywhere.</p>

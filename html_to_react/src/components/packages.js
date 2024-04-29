@@ -1,13 +1,34 @@
 import React from 'react';
 import './packages.css';
-import { FaFacebook, FaTwitter, FaLinkedin, FaInstagram } from 'react-icons/fa';
 import FooterComponent from './footer';
+import Cart from './cart'; // Import the Cart component
 
 class EduPackages extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      cartItems: [], // Initialize cart items array
+    };
+  }
+
+  // Method to handle adding items to the cart
+  handleAddToCart = (packageName, price) => {
+    const newItem = { packageName, price };
+    this.setState((prevState) => ({
+      cartItems: [...prevState.cartItems, newItem],
+    }));
+  };
+
+  // Method to handle removing items from the cart
+  handleRemoveFromCart = (index) => {
+    this.setState((prevState) => ({
+      cartItems: prevState.cartItems.filter((item, i) => i !== index),
+    }));
+  };
+
   render() {
     return (
       <div className="page1">
-        
         <div className="video">
           <video src="va.mp4" autoPlay muted loop></video>
         </div>
@@ -32,6 +53,7 @@ class EduPackages extends React.Component {
                       <li>Certificate of completion</li>
                       <li>Community forum access</li>
                     </ul>
+                    <button className='buy-now-button' onClick={() => this.handleAddToCart('STARTER PACKAGE', 29.99)}>BUY NOW</button>
                   </div>
                 </div>
               </div>
@@ -54,6 +76,7 @@ class EduPackages extends React.Component {
                       <li>Priority email support</li>
                       <li>Interactive projects</li>
                     </ul>
+                    <button className='buy-now-button' onClick={() => this.handleAddToCart('ADVANCED PACKAGE', 49.99)}>BUY NOW</button>
                   </div>
                 </div>
               </div>
@@ -76,76 +99,20 @@ class EduPackages extends React.Component {
                       <li>24/7 phone support</li>
                       <li>Job placement assistance</li>
                     </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            {/* Package 4 */}
-            <div className="containerpack">
-              <div className="cardpack">
-                <div className="front">
-                  <video className="vid" src="1.mp4" autoPlay muted loop></video>
-                </div>
-                <div className="back">
-                  <div className="contentpack">
-                    <h2>NEW PACKAGE</h2><br /><hr /><br />
-                    <ul>
-                      <b>Highlights:</b>
-                      <li>Access to new courses</li>
-                      <li>Exclusive content</li>
-                      <li>Live sessions</li>
-                      <li>Priority support</li>
-                    </ul>
+                    <button className='buy-now-button' onClick={() => this.handleAddToCart('PREMIUM PACKAGE', 99.99)}>BUY NOW</button>
                   </div>
                 </div>
               </div>
             </div>
 
-            {/* Package 5 */}
-            <div className="containerpack">
-              <div className="cardpack">
-                <div className="front">
-                  <video className="vid" src="2.mp4" autoPlay muted loop></video>
-                </div>
-                <div className="back">
-                  <div className="contentpack">
-                    <h2>SPECIAL PACKAGE</h2><br /><hr /><br />
-                    <ul>
-                      <b>Highlights:</b>
-                      <li>Access to special courses</li>
-                      <li>Personalized coaching</li>
-                      <li>Workshop access</li>
-                      <li>Assistance with projects</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Package 6 */}
-            <div className="containerpack">
-              <div className="cardpack">
-                <div className="front">
-                  <video className="vid" src="3.mp4" autoPlay muted loop></video>
-                </div>
-                <div className="back">
-                  <div className="contentpack">
-                    <h2>EXCLUSIVE PACKAGE</h2><br /><hr /><br />
-                    <ul>
-                      <b>Highlights:</b>
-                      <li>Access to exclusive content</li>
-                      <li>Personalized mentorship</li>
-                      <li>Priority assistance</li>
-                      <li>Guaranteed success</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
+            {/* Additional packages can be added similarly */}
           </div>
         </div>
-        <FooterComponent />
+
+        {/* Render Cart component and pass cartItems state and removal function */}
+        <Cart items={this.state.cartItems} removeFromCart={this.handleRemoveFromCart}/>
+
+        
       </div>
     );
   }

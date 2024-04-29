@@ -6,7 +6,7 @@ const FooterComponent = () => {
       <div>
         <section className="footer-about">
           <div>
-            <p style={{ fontFamily: 'Ranchers', fontSize: '34px', color: '#14125c' }}>Learnera</p>
+            <p style={{ fontFamily: 'cursive', fontSize: '34px', color: '#14125c' }}>Learnera</p>
             <p>Learnera is India's one of the best education platforms, known for creating one of the most sought after learning apps. With our unique learning platform and immensely talented best teachers, Learnera offers a highly personalised learning experience for 1st to 12th grades across CBSE and ICSE Boards. Our hands-on teaching methodology has made Learnera the primary choice of aspirants for competitive exams like IIT JEE, NEET, KVPY, NTSE, IMO, and IEO. Also, Learnera aims to make education accessible to all parts of the country with our affordable online classes.</p>
             <p style={{ color: '#282e3e', fontWeight: 700, marginTop: '60px' }}>Download app from</p>
             <span>
